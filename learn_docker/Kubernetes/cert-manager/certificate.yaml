@@ -1,0 +1,13 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: mytestapps-cert
+  namespace: default
+spec:
+  dnsNames:
+    - clone.georgeoademo.com.ng
+    - todoapp.georgeoademo.com.ng
+  secretName: mytestapps-tls
+  issuerRef:
+    name: letsencrypt-cluster-issuer
+    kind: ClusterIssuer
