@@ -5,7 +5,7 @@ metadata:
 spec:
   acme:  # Specifies that ACME (Automated Certificate Management Environment) protocol is used
     server: https://acme-v02.api.letsencrypt.org/directory  # The ACME server URL for Let's Encrypt
-    email: georgeajakadrex@gmail.com  # The email address for Let's Encrypt account registration and recovery
+    email: test@gmail.com  # The email address for Let's Encrypt account registration and recovery
     privateKeySecretRef:
       name: letsencrypt-cluster-issuer-key  # The name of the Kubernetes Secret resource where the ACME account private key will be stored
     solvers:
