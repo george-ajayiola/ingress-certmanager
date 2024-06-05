@@ -1,6 +1,6 @@
 # Kubernetes Deployment with Ingress and TLS
 
-This guide covers the steps to deploy an application to Kubernetes, set up Ingress for routing traffic, manage TLS certificates with cert-manager, and create a DNS A record.
+This guide covers the steps to deploy an application to Kubernetes, set up Ingress for routing traffic, manage TLS certificates with cert-manager.
 
 ## Prerequisites
 - A Kubernetes cluster
