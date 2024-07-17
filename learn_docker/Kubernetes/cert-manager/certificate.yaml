@@ -5,8 +5,7 @@ metadata:
   namespace: default  # The namespace in which the Certificate resource will be created
 spec:
   dnsNames:
-    - clone.georgeoademo.com.ng  # The first DNS name to be included in the certificate
-    - todoapp.georgeoademo.com.ng  # The second DNS name to be included in the certificate
+    - *.georgeoademo.com.ng  # The DNS name to be included in the certificate 
   secretName: mytestapps-tls  # The name of the Kubernetes Secret resource where the generated certificate and private key will be stored
   issuerRef:
     name: letsencrypt-cluster-issuer  # The name of the Issuer or ClusterIssuer resource responsible for signing the certificate
